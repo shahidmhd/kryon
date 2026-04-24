@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { IMG } from '@/lib/assets';
 
 export default function HomeBanner() {
   return (
@@ -24,7 +25,7 @@ export default function HomeBanner() {
         <div className="absolute inset-0 z-10 flex items-end justify-start pointer-events-none">
           <div className="relative w-[62vw] max-w-[520px] aspect-[3/4] -translate-x-[8%] md:-translate-x-[6%] translate-y-[4%] opacity-80 md:opacity-90 animate-fade-up">
             <Image
-              src="/images/bg2.png"
+              src={IMG.bg2}
               alt=""
               fill
               priority
@@ -38,7 +39,7 @@ export default function HomeBanner() {
         <div className="absolute inset-0 z-20 flex items-end justify-center pointer-events-none">
           <div className="relative w-[75vw] max-w-[620px] aspect-[3/4] translate-y-[2%] animate-fade-up animate-delay-100">
             <Image
-              src="/images/bg1.png"
+              src={IMG.bg1}
               alt="KRYON model with styled rings"
               fill
               priority
@@ -52,7 +53,7 @@ export default function HomeBanner() {
         <div className="absolute inset-0 z-30 flex items-end justify-end pointer-events-none">
           <div className="relative w-[62vw] max-w-[520px] aspect-[3/4] translate-x-[8%] md:translate-x-[6%] translate-y-[3%] animate-fade-up animate-delay-200">
             <Image
-              src="/images/bg3.png"
+              src={IMG.bg3}
               alt="KRYON model in leather with shades"
               fill
               priority
